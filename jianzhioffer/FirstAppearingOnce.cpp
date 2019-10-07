@@ -1,6 +1,7 @@
-链接：https://www.nowcoder.com/questionTerminal/00de97733b8e4f97a3fb5c680ee10720?f=discussion&toCommentId=4460137
-来源：牛客网
-
+#include <iostream>
+#include <vector>
+#include <map>
+using namespace std;
 bool cmp(const vector<int> &a, const vector<int> &b){
     if(a[2] < b[2])
         return 1;
@@ -87,3 +88,13 @@ public:
             return '#';
     }
 };
+
+int main(){
+    Solution s;
+    char c;
+    while(cin >> c){
+        s.Insert(c);
+        cout << s.FirstAppearingOnce() << endl;
+    }
+    return 0;
+}
